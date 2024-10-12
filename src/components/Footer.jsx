@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <div id="copyright">
-        <div class="wrapper">
+        <div className="wrapper">
           &copy; 2020. <b>RumahRafif.</b> All Rights Reserved.
         </div>
       </div>
