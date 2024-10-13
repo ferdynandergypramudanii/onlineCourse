@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { homeSection } from "../data/HomeSection";
 import { courseSection } from "../data/CourseSection";
+import { tutorsSection, tutorsList } from "../data/TutorsSection";
+import Tutors from "../components/Tutors";
+
 import parser from "html-react-parser";
 
 function Home() {
@@ -17,8 +20,15 @@ function Home() {
         </section>
 
         <section id="courses">
-          <div class="kolom">{parser(courseSection.content)}</div>
+          <div className="kolom">{parser(courseSection.content)}</div>
           <img src={courseSection.image} />
+        </section>
+
+        <section id="tutors">
+          <div className="tengah">
+            <div className="kolom">{parser(tutorsSection.constent)}</div>
+            <Tutors tutorsList={tutorsList} />
+          </div>
         </section>
       </div>
 

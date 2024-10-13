@@ -1,5 +1,5 @@
 export const courseSection = {
-  content: `<p class="deskripsi">You Will Need This</p>
+  content: `<p className="deskripsi">You Will Need This</p>
             <h2>Online Courses</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
@@ -12,7 +12,7 @@ export const courseSection = {
               facilis! Delectus exercitationem dolores sapiente?
             </p>
             <p>
-              <a href="" class="tbl-biru">
+              <a href="" className="tbl-biru">
                 Pelajari Lebih Lanjut
               </a>
             </p>`,
