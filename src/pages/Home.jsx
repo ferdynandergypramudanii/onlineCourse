@@ -4,9 +4,12 @@ import Footer from "../components/Footer";
 import { homeSection } from "../data/HomeSection";
 import { courseSection } from "../data/CourseSection";
 import { tutorsSection, tutorsList } from "../data/TutorsSection";
+import { partnersSection, partnersList } from "../data/PartnersSection";
 import Tutors from "../components/Tutors";
+import Partnesr from "../components/Partners";
 
 import parser from "html-react-parser";
+import Partners from "../components/Partners";
 
 function Home() {
   return (
@@ -28,6 +31,14 @@ function Home() {
           <div className="tengah">
             <div className="kolom">{parser(tutorsSection.constent)}</div>
             <Tutors tutorsList={tutorsList} />
+          </div>
+        </section>
+
+        <section id="partners">
+          <div className="tengah">
+            <div className="kolom">{parser(partnersSection.content)}</div>
+
+            <Partners partnersList={partnersList} />
           </div>
         </section>
       </div>
