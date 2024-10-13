@@ -6,10 +6,10 @@ import { courseSection } from "../data/CourseSection";
 import { tutorsSection, tutorsList } from "../data/TutorsSection";
 import { partnersSection, partnersList } from "../data/PartnersSection";
 import Tutors from "../components/Tutors";
-import Partnesr from "../components/Partners";
-
 import parser from "html-react-parser";
 import Partners from "../components/Partners";
+import Contact from "../components/Contact";
+import { contactSection } from "../data/ContactSection";
 
 function Home() {
   return (
@@ -42,6 +42,8 @@ function Home() {
           </div>
         </section>
       </div>
+
+      <Contact contactSection={contactSection} />
 
       <Footer />
     </>

@@ -1,4 +1,5 @@
 38:11
-1. className | CSS -> camelCase
-2. javascript modules -> import export object dll
-3. rfce
+className | CSS -> camelCase
+javascript modules -> import export object dll
+rfce
+direktori data untuk menyimpan data seperti text, gambar, dll [biar penulisannya ringkas]
